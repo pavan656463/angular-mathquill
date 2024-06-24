@@ -1,0 +1,32 @@
+<div class="wrapper">
+  <h1>MathQuill</h1>
+  <hello [latex]='outputLatex' [mathObj]="mathObj"></hello>
+
+</div>
+<div class="wrapper">
+  Input:
+  <div id="math-field" ></div>
+  <!-- <textarea maxlength = "1"  id="substitue-id" [disabled]="true"></textarea> -->
+</div>
+<div class="wrapper">
+  Rendered Latex:
+  <div id="latex"></div>
+</div>
+<div *ngIf="varSet.size" class="wrapper">
+  Variables:
+  <div *ngFor="let i of varSet" class="var">{{i}} =
+    <input>
+  </div>
+</div>
+
+<span id="fill-in-the-blank" style="font-size:23px; font-style:">1</span>
+<button (click)="solve()" style="float:right;margin-right:20px;">Solve</button>
+
+<h2 *ngIf="res" style="margin-left:20px;">{{res}}</h2>
+
+<div id="keyy" class="super-duper-keyboard wrapper">
+  <button *ngFor="let button of buttons" (click)="onClickMathButton($event, button)">
+    {{button.displayContent}}
+  </button>
+  <button (click)="save()">SAVE</button>
+</div>

@@ -1,0 +1,37 @@
+:host {
+  display: block;
+  height: 100%;
+  position: relative;
+}
+
+p {
+  font-family: Lato;
+}
+
+.wrapper {
+  padding: 20px;
+  margin: 20px;
+  border: 1px solid black;
+}
+
+.super-duper-keyboard {
+  background: black;
+  /* position: absolute; */
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+#fill-in-the-blank {
+  margin-left: 20px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.mq-editable-field .mq-math-mode {
+  border: 0px;
+  border-bottom: 1px solid black;
+}
+.mq-editable-field.focused {
+  box-shadow: unset;
+  border-radius: unset;
+  border-bottom: 2px solid blue;
+}

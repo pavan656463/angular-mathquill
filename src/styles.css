@@ -1,0 +1,13 @@
+/* Add application styles & imports to this file! */
+
+html, body {
+  margin: 0;
+}
+
+* {
+ box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+}

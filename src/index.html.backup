@@ -1,0 +1,14 @@
+<!-- DO NOT AUTOFORMAT THIS.... !!!! -->
+<head>
+	<!-- JQUERY -->
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+	 crossorigin="anonymous"></script>
+	<script>
+		console.log('jquery', window.jQuery);
+	</script>
+
+	<!-- MATHQUILL -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mathquill/0.10.1/mathquill.css" />
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/mathquill/0.10.1/mathquill.js"></script>
+</head>
+<my-app>loading</my-app>
